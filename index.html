@@ -1,1 +1,145 @@
-<h1>Setting up</h1>
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Bootstrap CSS-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <!--Bootstrap Icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="styles.css">
+
+        <title>Jake Andersen's Website</title>
+    </head>
+    <body>
+        <!--Background space-->
+        <div id="background">
+            <!--Page content-->
+            <div id="page-content">
+                <!--Navbar-->
+                <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark" id="navbar">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">Jake Andersen</a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="accomplishments.html">My Accomplishments</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </nav>
+
+                <!--Text and page content-->
+                <div id="text-content">
+                    <div class="container text-center">
+                        <h1 id="title">Jake Andersen</h1>
+                    </div>
+                    <br>
+                    <br>
+                    <!--Opening display-->
+                    <div class="container text-center" id="opening">
+                      <h4>Hello, welcome to my website. Here you will find information about me and some of the things that I do, including projects that I have worked on and achievments I have accomplished so far.</h4>
+                      <br>
+                      <br>
+                        <div class="row align-items-center">
+                          <div class="col">
+                            <img src="images/me2.jpg" alt="A picture of me" id="homePic">
+                          </div>
+                          <div class="col">
+                            <h5>I'm Jake Andersen. I'm currently a Computer Science student interested in and studying AI and looking to become a future software engineer or stack based developer.</h5>
+                          </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <!--Page message-->
+                    <div class="container" id="message">
+                        <p>If you would like to see some of my accomplishments then please naviagte to the respective page. There you will see a brief overview of my experience, mostly including some of the projects that I have worked on in my time, along with some other general achievements of mine. Or just head over to my <a href="https://github.com/Jake-Andersen">GitHub</a> to directly see some of my projects.</p>
+                        <p>If you would like to first get to know me and what I am passionate about then you can learn a bit more about me and my background on my about page.</p>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="container" id="carousel-container">
+                        <h2>Some interesting things:</h2>
+                        <div id="aboutCarousel" class="carousel carousel-dark slide">
+                            <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#aboutCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                  <img src="images/icpc-team.png" class="d-block w-100" alt="A picture of myself and two fellow students on my team with the medals we won at the ICPC">
+                                  <div class="carousel-caption d-none d-md-block" id="caption1">
+                                  <h5>At the ICPC</h5>
+                                  <p>My teamates and myself (center) at the 2022 ICPC regional contest after winning a bronze medal.</p>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="images/martian-chess-play.png" class="d-block w-100" alt="A picture of my project of an online version of the game Martian Chess in play">
+                                  <div class="carousel-caption d-none d-md-block" id="caption2">
+                                  <h5>Martian Chess Senior Project</h5>
+                                  <p>An example of the group based Senior capstone project that I am working on.</p>
+                                  </div>
+                              </div>
+                              <div class="carousel-item">
+                                  <img src="images/python.png" class="d-block w-100" alt="The Python logo">
+                                  <div class="carousel-caption d-none d-md-block" id="caption3">
+                                  <h5>Python</h5>
+                                  <p>Python is currently my favorite programming language and the one that I know best. I enjoy using it to study and develop AI.</p>
+                                  </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div class="container">
+                      <h4>My Links:</h4>
+                      <h5><i class="bi bi-github"></i> GitHub: <a href="https://github.com/Jake-Andersen">Jake-Andersen</a></h5>
+                    </div>
+                    <br>
+                    <br>
+                    
+                    <div class="container">
+                        <p>Want to change the background?</p>
+                        <div>
+                            <label for="backgroundFormControlInput" class="form-label">Enter a new image url to change it to</label>
+                            <input type="text" class="form-control" id="backgroundFormControlInput">
+                        </div>
+                        <br>
+                        <button id="change-background">Change it!</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--Bootstrap JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!--Custom JS-->
+        <script src="scripts.js"></script>
+    </body>
+</html>
