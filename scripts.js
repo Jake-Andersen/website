@@ -14,6 +14,31 @@ function applyBackground() {
 
 // Index page code
 function index() {
+    // Contact form verification
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    var btn = document.getElementById("emailSend");
+    console.log(name)
+
+    btn.addEventListener('click', function(e) {
+        if(name === "") {
+            alert("Please enter a name.");
+            return false;
+        }
+    
+        if(email === "" || !email.includes("@")) {
+            alert("Please enter a valid email address.");
+            return false;
+        }
+    
+        if(message === "") {
+            alert("Please enter a message to send.");
+            return false;
+        }
+        return true;
+    });
+
     // Background change
     var change = document.getElementById("change-background");
     var newBackground = document.getElementById("backgroundFormControlInput");
