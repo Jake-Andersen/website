@@ -15,13 +15,15 @@ function applyBackground() {
 // Index page code
 function index() {
     // Contact form verification
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
     var btn = document.getElementById("emailSend");
-    console.log(name)
 
     btn.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
         if(name === "") {
             alert("Please enter a name.");
             return false;
@@ -36,6 +38,11 @@ function index() {
             alert("Please enter a message to send.");
             return false;
         }
+
+        alert("Thanks for your message!")
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
         return true;
     });
 

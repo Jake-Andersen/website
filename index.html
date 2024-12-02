@@ -64,7 +64,7 @@
                     <br>
 
                     <!--Page message-->
-                    <div class="container" id="message">
+                    <div class="container" id="pageNavigation">
                         <p>If you would like to see some of my accomplishments then please naviagte to the respective page. There you will see a brief overview of my experience, mostly including some of the projects that I have worked on in my time, along with some other general achievements of mine. Or just head over to my <a href="https://github.com/Jake-Andersen">GitHub</a> to directly see some of my projects.</p>
                         <p>If you would like to first get to know me and what I am passionate about then you can learn a bit more about me and my background on my about page.</p>
                     </div>
@@ -125,20 +125,23 @@
                     <div class="container">
                       <h4>Contact me:</h4>
                       <p>Want to quickly contact me and send me an email? Just fill out the form below and submit.</p>
-                      <form name="contact" method="POST" data-netlify="true"  id="contactForm">
-                        <input type="hidden" name="subject" value="website contact email from jakeandersen.netlify.app" />
-                        <p>
-                          <label>Your Name: <input type="text" name="name" id="name"/></label>
-                        </p>
-                        <p>
-                          <label>Your Email: <input type="email" name="email" id="email"/></label>
-                        </p>
-                        <p>
-                          <label>Message: <textarea name="message" id="message"></textarea></label>
-                        </p>
-                        <p>
-                          <button type="submit" id="emailSend">Send</button>
-                        </p>
+                      <form action="" id="contactForm">
+                        <label for="name">Your Name: </label>
+                        <br>
+                        <input type="text" name="name" id="name"/>
+                        <br>
+
+                        <label for="email">Your Email: </label>
+                        <br>
+                        <input type="email" name="email" id="email"/>
+                        <br>
+
+                        <label for="message">Message: </label>
+                        <br>
+                        <textarea name="message" id="message" rows="4" cols="50"></textarea>
+                        <br>
+
+                        <button type="submit" id="emailSend">Send</button>
                       </form>
                     </div>
                     <br>
